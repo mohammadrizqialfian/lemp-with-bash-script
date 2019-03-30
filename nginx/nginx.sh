@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 #reset warna
 color_off='\033[0m'
 

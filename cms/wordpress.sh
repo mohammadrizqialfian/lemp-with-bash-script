@@ -56,7 +56,7 @@ sudo chown -R www-data:www-data /var/www/html/wordpress
 
 #merubah root directory web server
 echo -e "$red \n\tmerubah root directory web server.. $color_off"
-sed -i "0,/root \/var\/www\/html;/s//root \/var\/www\/html\/wordpress;/" /etc/nginx/site-available/default
+sudo sed -i "0,/root \/var\/www\/html;/s//root \/var\/www\/html\/wordpress;/" /etc/nginx/sites-available/default
 
 #merestart nginx
 echo -e "$red \n\tmereload nginx.. $color_off"

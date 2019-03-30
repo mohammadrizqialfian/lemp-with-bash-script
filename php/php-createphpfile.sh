@@ -6,7 +6,7 @@ color_off='\033[0m'
 red='\033[0;31m'
 
 #membuat file untuk cek php di directory default nginx
-echo -e "$red \n\tmasukkan nama file(bebas) yang berfungsi menyimpan code phpinfo"
+echo -e "$red \n\tmasukkan nama file(bebas) yang berfungsi menyimpan code phpinfo.. $color_off"
 read -p "masukkan nama file(.php) : " file_new
 echo -e "$red \n\tmembuat file .. $color_off"
 sudo touch /var/www/html/"$file_new"

@@ -38,7 +38,7 @@ sudo sed -i "0,/include \/home/s//\\tinclude \/home/" /etc/nginx/nginx.conf
 #menambahkan root directory di conf.d
 echo -e "$red \n\tmenambahkan root directory di conf.d.. $color_off"
 sed -i "0,/root \/var\/www\/html;/s//#root \/var\/www\/html;/" ~/conf.d/"$file"
-sed -i "41 aroot $directoryku\/www\/$directory" ~/conf.d/"$file"
+sed -i "41 aroot $directoryku\/www\/$directory;" ~/conf.d/"$file"
 sed -i "0,/root \/home/s//\\troot \/home/" ~/conf.d/"$file"
 
 #reload nginx
